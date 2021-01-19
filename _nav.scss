@@ -1,0 +1,50 @@
+$primary: #50b160;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$para-font: 2.5rem;
+$nav-font: 2rem;
+.main-head {
+    background: $primary;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    min-height: 5vh;
+    display: flex;
+    nav {
+        display: flex;
+        padding: 2rem;
+        margin: auto;
+        align-items: center;
+        flex: 1 1 40rem;
+        z-index: 4;
+        flex-wrap: wrap;
+    }
+    #logo {
+        display: flex;
+        flex: 1 1 40rem;
+        color: black;
+        font-size: 3rem;
+        text-shadow: 2px 2px white;
+    }
+    nav ul {
+        display: flex;
+        flex: 1 1 40rem;
+        list-style: none;
+        align-items: center;
+        float: right;
+        justify-content: space-around;
+    }
+    nav li a {
+        display: flex;
+        flex: 1 1 40rem;
+        font-size: $nav-font;
+        color: black;
+        padding: 1rem;
+    }
+    nav li a:hover {
+        background-color: white;
+        padding: .5;
+        margin: 0;
+    }
+}

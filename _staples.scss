@@ -1,0 +1,17 @@
+$primary: #50b160;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$para-font: 2.5rem;
+.staples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: beige;
+    text-align: center;
+    h2 {
+        color: black;
+        font-size: $large-font;
+    }
+}
