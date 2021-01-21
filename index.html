@@ -9,87 +9,137 @@
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bbe4def61b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="main-head">
         <nav>
-            <h3 id="logo">Resourcy</h3>
+            <h3 class="logo"><a id="logo" href="#home">Resourcy</a></h3>
             <ul>
-                <li><a href="#staples">Staples</a></li>
+                <li><a href="#staples">Essentials</a></li>
                 <li><a href="#resources">Resources</a></li>
                 <li><a href="#design">Design</a></li>
-                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#pictures">Media</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="home" class="home">
         <h2>Resourcy</h2>
         <h3>Your Dev Tool Resource Home</h3>
-    </section>
-    <section class="staples" id="staples">
-        <h2>Staples of Dev Tools</h2>
-        <h4>Google Font</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="staple-image" src="fonts.jpg" alt="">
-        <h4>Fontawesome</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="staple-image" src="font-awesome.jpg" alt="">
-        <h4>Github</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="staple-image" src="github.jpg" alt="">
-        <h4>Netlify</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="staple-image" src="netlify.jpg" alt="">
 
     </section>
+
+    <section class="staples" id="staples">
+        <h2>The Essentials of Dev Tools</h2>
+        <div class="staples-container">
+            <div class="card">
+                <h4>Google</h4>
+                <p>To start out, Google is your best friend as a new OR senior developer. Google is widely as a resource to assist you writing code and finding solutions. Never be afraid to Google the answer if you are stuck. You may find better way of writing
+                    out your code or find a new resource to use!</p>
+                <a href="https://www.google.com/" target="_blank"><img class=" staple-image " src="google.jpg " alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>Google Fonts</h4>
+                <p>Of course Google Fonts is a staple for programmers. This database allows you to browse through thousands of fonts to put on your custom websites and apps! You can easily link or download fonts from this database that google provides.</p>
+                <a href="https://fonts.google.com/ " target="_blank"><img class="staple-image" src="fonts.jpg" alt="" /></a>
+            </div>
+            <div class="card">
+                <h4>Github</h4>
+                <p>Hopefully you have heard of Github. This website is a great place to put your code out there and very useful when searching for your first programming career. Github allows your to post the code you create on their website for friends
+                    and followers to look at(One of the best features of this website) because you can have more expierenced programmers browse your code for errors and offer corrections or solutions. </p>
+                <a href="https://github.com/" target="_blank"><img class=" staple-image " src="github.jpg " alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>Netlify</h4>
+                <p>Netlify is a cloud computing company that offers website hosting and serverless backend services. I use this website personally to deploy sites including this one! Setting up and account is quite easy and can be linked right to your Github
+                    to easily update files for the websites you launch! The free version gives you limited storage space for websites while the p[aid version allows for more storage and team coordination.</p>
+                <a href="https://www.netlify.com/ " target="_blank"><img class="staple-image" src="netlify.jpg" alt="" /></a>
+            </div>
+        </div>
+    </section>
+
     <section class="resources" id="resources">
         <h2>Resources</h2>
-        <h4>Google</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="resource-image" src="google.jpg" alt="">
-        <h4>Stackoverflow</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="resource-image" src="stackoverflow.jpg" alt="">
-        <h4>W3Schools</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="resource-image" src="w3schools.jpg" alt="">
+        <div class="resources-container">
+
+            <div class="card">
+                <h4>Stackoverflow</h4>
+                <p>StackOverflow is a question and answer website that allows free communication between developers. There are a WIDE variety of topics when it comes to computer programming. Setting up an account is very easy and allows you to get exactly
+                    the help you need from people in the field.</p>
+                <a href="https://stackoverflow.com/" target="_blank"><img class=" resource-image " src="stackoverflow.jpg " alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>W3Schools</h4>
+                <p>W3Schools is another resource website I found very useful while beginning developing. It is a resource for a number of programming languages. They have exersizes and quizzes you can take to practice your programming skills and offer certificaions
+                    for passing their programming tests. I like this website for providing a simple library where you can look up basic and some more advanced coding examples and guides.</p>
+                <a href="https://www.w3schools.com/ " target="_blank"><img class="resource-image" src="w3schools.jpg" alt="" /></a>
+            </div>
+        </div>
     </section>
+
     <section class="design" id="design">
         <h2>Design</h2>
-        <h4>Figma</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="figma.jpg" alt="">
-        <h4>Sketch</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="sketch.jpg" alt="">
-        <h4>Gimp</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="GIMP-The-Free-Photoshop-2.jpg" alt="">
+        <div class="design-container">
+            <div class="card">
+                <h4>Figma</h4>
+                <p>Figma is a design website for laying out the content of your website. Figma you a visual sample of what your website will look like that you can show off to your friends or coworkers!</p>
+                <a href="https://www.figma.com" target="_blank"><img class="design-image" src="figma.jpg" alt="" /></a>
+            </div>
+            <div class="card">
+                <h4>Sketch</h4>
+                <p>Sketch is similar to Figma. Sketch descripes itself as a 'digital design toolkit.'. Personally I have used Figma more often than Sketch. This is your personal prefernce and what you are comfortable with. It's always nice to have a outline
+                    of what you are creating!</p>
+                <a href="https://www.sketch.com/" target="_blank"><img class=" design-image " src="sketch.jpg " alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>Gimp</h4>
+                <p>Gimp is a FREE clone of Adobe Photoshop. You can use this downloadable desktop app to edit and resize images. The subscriptions to libraries and websites can start to add up when you are beginning developing its always nice to have a free
+                    option!
+                </p>
+                <a href="https://www.gimp.org/" target="_blank"><img class="design-image " src="GIMP-The-Free-Photoshop-2.jpg " alt=" " /></a>
+            </div>
+        </div>
     </section>
-    <section class="pictures" id="pictures">
-        <h2>Copyright Free Pictures</h2>
-        <h4>Unsplash</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="figma.jpg" alt="">
-        <h4>Pexel</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="sketch.jpg" alt="">
-        <h4>Gimp</h4>
-        <p>Filler paragraph? Some text here would be cool</p>
-        <img class="design-image" src="GIMP-The-Free-Photoshop-2.jpg" alt="">
+
+    <section class="pictures " id="pictures">
+        <h2>Copyright Free Media</h2>
+        <div class="design-container ">
+            <div class="card ">
+                <h4>Unsplash</h4>
+                <p>Unsplash is a copyright free media website. The website claims to have over 200,000 contributing photographers and generates billions of photo impressions a year. There are over 2 MILLION photos on this website that can be sorted by theme,
+                    color scheme and more.</p>
+                <a href="https://unsplash.com/" target="_blank"><img class="pic-image " src="unsplash.jpg " alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>Pexel</h4>
+                <p>Pexels is a similar website to Unsplash. It also has millions of copyright free photos and VIDEOS that can easily be searched by whatever theme you are creating.</p>
+                <a href="https://www.pexels.com/" target="_blank"><img class="pic-image " src="pexels.jpg" alt=" " /></a>
+            </div>
+            <div class="card ">
+                <h4>Fontawesome</h4>
+                <p>Fontawesome is a online library with thousands of different icons. While there is a paid subsription some icons remain free for all. You can directly and easily link this website to your HTML file and use the icons with ease. Icons can
+                    be searched easily while the depth is limited for the free verisons.</p>
+                <a href="https://fontawesome.com/" target="_blank"><img class="pic-image " src="font-awesome.jpg " alt=" " /></a>
+            </div>
+        </div>
     </section>
-    <section class="suggestions" id="suggestions">
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text" required name="ame" value="name" />
-            <label for="email">Email</label>
-            <input type="email" required name="email" value="Email" />
-            <textarea required name="textarea" value="textarea"></textarea>
+
+    <section class="suggestions " id="suggestions ">
+        <h4>There are many resources out there! Please share if you think one <u>NEEDS</u> to be on this website!</h4>
+        <form action="https://formspree.io/f/xaylvngn " method="POST ">
+            <label for="name ">Name:
+            <input type="text " required name="name " value=" " /> </label>
+            <label for="email ">Email:
+            <input type="email " required name="email " value=" " /> </label>
+
+            <textarea required name="textarea " value="textarea " rows="10 " cols="50 ">Comment or Suggestion...</textarea>
+            <button type="submit ">Send</button>
         </form>
     </section>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

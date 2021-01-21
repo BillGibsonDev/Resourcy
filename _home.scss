@@ -1,17 +1,23 @@
 $primary: #50b160;
 $large-font: 4.5rem;
 $title-font: 3.5rem;
-$para-font: 2.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
 .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background: beige;
+    background: $back-color;
     text-align: center;
     h2 {
-        color: black;
+        color: $primary;
         font-size: $large-font;
+        text-shadow: 1px 1px rgb(255, 255, 255);
+    }
+    h3 {
+        font-size: $title-font;
+        text-shadow: 1px 1px rgb(255, 255, 255);
     }
 }

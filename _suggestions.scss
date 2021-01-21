@@ -2,16 +2,47 @@ $primary: #50b160;
 $large-font: 4.5rem;
 $title-font: 3.5rem;
 $para-font: 2.5rem;
+$form-font: 1.5rem;
 .suggestions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: beige;
+    background: $back-color;
     text-align: center;
-    h2 {
-        color: black;
-        font-size: $large-font;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    h4 {
+        color: $primary;
+        font-size: $title-font;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+    form input,
+    form label {
+        padding: 1rem;
+        margin-bottom: .5rem;
+        font-size: $form-font;
+        width: 100%;
+    }
+    form textarea {
+        text-align: center;
+        font-size: $form-font;
+    }
+    form button {
+        margin: 2rem;
+        font-size: $form-font;
+        padding: .5rem;
+        cursor: pointer;
+        width: 40%;
+    }
+    form button:hover {
+        background: $primary;
     }
 }

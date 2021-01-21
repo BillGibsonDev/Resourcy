@@ -3,10 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
   background: black;
+  color: white;
 }
 
 body {
@@ -17,6 +19,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
 }
 
 .main-head {
@@ -30,13 +38,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  margin: auto;
 }
 
 .main-head nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  padding: 0;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -49,6 +59,15 @@ a {
       flex-wrap: wrap;
 }
 
+.main-head .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
 .main-head #logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,9 +75,16 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  color: black;
-  font-size: 3rem;
-  text-shadow: 2px 2px white;
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px black;
+  padding: .5rem;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+.main-head #logo:hover {
+  color: #15202b;
 }
 
 .main-head nav ul {
@@ -75,6 +101,8 @@ a {
   float: right;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-head nav li a {
@@ -90,9 +118,18 @@ a {
 }
 
 .main-head nav li a:hover {
-  background-color: white;
-  padding: .5;
-  margin: 0;
+  color: white;
+}
+
+@media screen and (max-width: 932px) {
+  nav {
+    text-align: center;
+  }
+  #logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .home {
@@ -110,13 +147,19 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 90vh;
-  background: beige;
+  background: #15202b;
   text-align: center;
 }
 
 .home h2 {
-  color: black;
+  color: #50b160;
   font-size: 4.5rem;
+  text-shadow: 1px 1px white;
+}
+
+.home h3 {
+  font-size: 3.5rem;
+  text-shadow: 1px 1px white;
 }
 
 .resources {
@@ -133,14 +176,55 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background: beige;
+  min-height: 100vh;
+  background: #15202b;
   text-align: center;
+  margin-top: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .resources h2 {
-  color: black;
+  color: #50b160;
   font-size: 4.5rem;
+  text-shadow: 1px 1px white;
+}
+
+.resources .resources-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resources .card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(25, 233, 104, 0.1);
+}
+
+.resources h4 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.resources .resource-image {
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.resources p {
+  font-size: 1.5rem;
 }
 
 .design {
@@ -157,14 +241,53 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background: beige;
+  min-height: 100vh;
+  background: #15202b;
   text-align: center;
+  margin-top: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .design h2 {
-  color: black;
+  color: #50b160;
   font-size: 4.5rem;
+  text-shadow: 1px 1px white;
+}
+
+.design .design-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design .card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(25, 233, 104, 0.1);
+}
+
+.design h4 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.design .design-image {
+  margin: .5rem;
+  padding: 1rem;
+  width: 30%;
+}
+
+.design p {
+  font-size: 1.5rem;
 }
 
 .pictures {
@@ -181,14 +304,53 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background: beige;
+  background: #15202b;
   text-align: center;
+  min-height: 100vh;
+  margin-top: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pictures h2 {
-  color: black;
+  color: #50b160;
   font-size: 4.5rem;
+  text-shadow: 1px 1px white;
+}
+
+.pictures .picture-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pictures .card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(25, 233, 104, 0.1);
+}
+
+.pictures h4 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.pictures .pic-image {
+  margin: .5rem;
+  padding: 1rem;
+  width: 30%;
+}
+
+.pictures p {
+  font-size: 1.5rem;
 }
 
 .staples {
@@ -205,14 +367,73 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  background: beige;
+  min-height: 100vh;
+  background: #15202b;
   text-align: center;
+  margin-top: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .staples h2 {
-  color: black;
+  color: #50b160;
   font-size: 4.5rem;
+  text-shadow: 1px 1px white;
+}
+
+.staples .staples-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: 40% 40%;
+      grid-template-rows: 40% 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staples .card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(25, 233, 104, 0.1);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.staples h4 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.staples .staple-image {
+  margin: .5rem;
+  padding: 1rem;
+}
+
+.staples p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 932px) {
+  .staples-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50%;
+        grid-template-columns: 50%;
+    -ms-grid-rows: 25%;
+        grid-template-rows: 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .suggestions {
@@ -230,12 +451,57 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: beige;
+  background: #15202b;
   text-align: center;
+  margin-top: 4rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.suggestions h2 {
-  color: black;
-  font-size: 4.5rem;
+.suggestions h4 {
+  color: #50b160;
+  font-size: 3.5rem;
+}
+
+.suggestions form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suggestions form input,
+.suggestions form label {
+  padding: 1rem;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.suggestions form textarea {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.suggestions form button {
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  cursor: pointer;
+  width: 40%;
+}
+
+.suggestions form button:hover {
+  background: #50b160;
 }
 /*# sourceMappingURL=styles.css.map */

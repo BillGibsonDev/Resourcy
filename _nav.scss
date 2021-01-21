@@ -11,21 +11,33 @@ $nav-font: 2rem;
     z-index: 5;
     min-height: 5vh;
     display: flex;
+    width: 100%;
+    margin: auto;
     nav {
         display: flex;
-        padding: 2rem;
+        padding: 0;
         margin: auto;
         align-items: center;
         flex: 1 1 40rem;
         z-index: 4;
         flex-wrap: wrap;
     }
+    .logo {
+        display: flex;
+        flex: 1 1 40rem;
+    }
     #logo {
         display: flex;
         flex: 1 1 40rem;
-        color: black;
-        font-size: 3rem;
-        text-shadow: 2px 2px white;
+        color: rgb(255, 255, 255);
+        font-size: $title-font;
+        text-shadow: 3px 3px rgb(0, 0, 0);
+        padding: .5rem;
+        margin-left: 3%;
+        cursor: pointer;
+    }
+    #logo:hover {
+        color: $back-color;
     }
     nav ul {
         display: flex;
@@ -34,6 +46,7 @@ $nav-font: 2rem;
         align-items: center;
         float: right;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     nav li a {
         display: flex;
@@ -43,8 +56,15 @@ $nav-font: 2rem;
         padding: 1rem;
     }
     nav li a:hover {
-        background-color: white;
-        padding: .5;
-        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 932px) {
+    nav {
+        text-align: center;
+    }
+    #logo {
+        justify-content: center;
     }
 }

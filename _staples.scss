@@ -1,17 +1,57 @@
 $primary: #50b160;
 $large-font: 4.5rem;
 $title-font: 3.5rem;
-$para-font: 2.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
 .staples {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: beige;
+    min-height: 100vh;
+    background: $back-color;
     text-align: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    width: 100%;
     h2 {
-        color: black;
+        color: $primary;
         font-size: $large-font;
+        text-shadow: 1px 1px rgb(255, 255, 255);
+    }
+    .staples-container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        justify-content: center;
+    }
+    .card {
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px solid rgba(25, 233, 104, 0.1);
+        justify-content: center;
+        align-items: center;
+    }
+    h4 {
+        font-size: $subtitle-font;
+        text-decoration: underline;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .staple-image {
+        margin: .5rem;
+        padding: 1rem;
+    }
+    p {
+        font-size: $para-font;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .staples-container {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 25%;
+        justify-content: center;
     }
 }

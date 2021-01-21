@@ -1,17 +1,46 @@
 $primary: #50b160;
 $large-font: 4.5rem;
 $title-font: 3.5rem;
-$para-font: 2.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
 .pictures {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: beige;
+    background: $back-color;
     text-align: center;
+    min-height: 100vh;
+    margin-top: 4rem;
+    flex-wrap: wrap;
     h2 {
-        color: black;
+        color: $primary;
         font-size: $large-font;
+        text-shadow: 1px 1px rgb(255, 255, 255);
+    }
+    .picture-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .card {
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px solid rgba(25, 233, 104, 0.1);
+    }
+    h4 {
+        font-size: $subtitle-font;
+        text-decoration: underline;
+        margin: .5rem;
+        padding: .5rem;
+    }
+    .pic-image {
+        margin: .5rem;
+        padding: 1rem;
+        width: 30%;
+    }
+    p {
+        font-size: $para-font;
     }
 }
